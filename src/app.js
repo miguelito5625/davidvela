@@ -26,6 +26,7 @@ app.use(myConnection(mysql, {
     database: 'davidvela'
 }, 'single'));
 
+
 app.use(express.urlencoded({extended: false}));
 
 app.use(express.static(path.join(__dirname, 'public')));

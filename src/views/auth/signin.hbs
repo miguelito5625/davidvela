@@ -1,0 +1,97 @@
+ <div class="page-header header-filter" style="background-image: url('/estilos/img/bg7.jpg'); background-size: cover; background-position: top center;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 ml-auto mr-auto">
+          <div class="card card-login">
+            <form class="form" onsubmit="event.preventDefault();" method="" action="" style="min-height:350px">
+              <div class="card-header card-header-primary text-center" style="padding:40px">
+                <h4 class="card-title">Iniciar Sesión</h4>
+                <!-- <div class="social-line">
+                  <a href="#pablo" class="btn btn-just-icon btn-link">
+                    <i class="fa fa-facebook-square"></i>
+                  </a>
+                  <a href="#pablo" class="btn btn-just-icon btn-link">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                  <a href="#pablo" class="btn btn-just-icon btn-link">
+                    <i class="fa fa-google-plus"></i>
+                  </a>
+                </div> -->
+              </div>
+              <p class="description text-center"><a href="/signup">Crear usuario</a></p>
+              <div class="card-body">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="material-icons">face</i>
+                    </span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="usuario" id="usuario">
+                </div>
+                <!-- <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="material-icons">mail</i>
+                    </span>
+                  </div>
+                  <input type="email" class="form-control" placeholder="Email...">
+                </div> -->
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="material-icons">lock_outline</i>
+                    </span>
+                  </div>
+                  <input type="password" class="form-control" placeholder="contraseña" id="contrasenia">
+                </div>
+              </div>
+              <div class="footer text-center" style="margin-bottom: 15px">
+                <input type="submit" onclick="singupUser();" class="btn btn-primary" value="Crear" data-toggle="modal" data-target="#exampleModal">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- Modals -->
+   <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="text-center"> <!--  modal-header  -->
+          <h5 class="modal-title card-title" id="exampleModalLabel">Iniciando Sesion</h5>
+          <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span> -->
+          </button>
+        </div>
+        <div class="modal-body">
+
+            
+            <!-- Progress bar 
+                <div class="progress" style="height: 15px;">
+                    <div id="loginProgress" class="progress-bar bg-success" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div> -->
+
+                  <div class="text-center">
+                        <div class="spinner-grow text-primary" role="status" style="width: 5rem; height: 5rem;">
+                                <span class="sr-only">Loading...</span>
+                              </div>
+                    </div>
+            
+        </div>
+        <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+    
+
+  </div>
+  
+
+  <script src="/estilos/js/formularios/singupUser.js"></script>

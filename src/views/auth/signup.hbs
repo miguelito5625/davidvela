@@ -1,0 +1,92 @@
+<div class="page-header header-filter"
+  style="background-image: url('/estilos/img/bg7.jpg'); background-size: cover; background-position: top center;">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 ml-auto mr-auto">
+        <div class="card card-login">
+          <form class="form" onsubmit="event.preventDefault();" method="" action="" style="min-height:380px">
+            <div class="card-header card-header-primary text-center" style="padding:40px">
+              <h4 class="card-title">Crear user</h4>
+
+            </div>
+            <div class="card-body">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="material-icons">face</i>
+                  </span>
+                </div>
+                <input type="text" class="form-control" placeholder="usuario" id="user">
+              </div>
+
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="material-icons">lock_outline</i>
+                  </span>
+                </div>
+                <input type="password" class="form-control" placeholder="contraseña" id="password1"
+                  onkeyup="countPass1(this)">
+              </div>
+
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i id="iconPass2" class="material-icons">lock_outline</i>
+                  </span>
+                </div>
+                <input type="password" class="form-control" placeholder="repetir contraseña" id="password2"
+                  onkeyup="countPass2(this)">
+              </div>
+
+
+            </div>
+            <div class="footer text-center" style="margin-bottom: 15px">
+              <input type="submit" id="boton1" class="btn btn-primary" value="Ingresar" data-toggle="modal"
+                data-target="#loadingModal" onclick="singupUser()">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modals -->
+  <!-- Modal -->
+  <div class="modal fade" id="loadingModal" tabindex="-1" role="dialog" aria-labelledby="loadingModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="text-center">
+          <!--  modal-header  -->
+          <h5 class="modal-title card-title" id="loadingModalLabel">Registrando usuario</h5>
+          <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button> -->
+        </div>
+        <div class="modal-body">
+
+          <div class="text-center">
+            <div class="spinner-grow text-primary" role="status" style="width: 5rem; height: 5rem;">
+              <span class="sr-only">Loading...</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
+
+
+
+<script>
+
+    // $('#password2').attr('data-placement', 'right').attr('title', 'hola').tooltip('show');
+
+</script>
+
+<script src="/estilos/js/formularios/signupUser.js"></script>

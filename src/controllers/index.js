@@ -1,3 +1,4 @@
+
 const controller = {};
 
 controller.error404 = (req, res, next) => {
@@ -8,8 +9,10 @@ controller.error404 = (req, res, next) => {
 
 controller.indexPage = (req, res) => {
 
-    res.render('index');
+    // res.render('index');
+    res.send('index page');
 
 }
+
 
 module.exports = controller;
